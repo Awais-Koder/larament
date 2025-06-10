@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('storage_facilities', function (Blueprint $table) {
             $table->id();
-    $table->string('name');
-    $table->foreignId('storage_company_id')->constrained()->onDelete('cascade');
-    $table->timestamps();
+            $table->string('name');
+            $table->foreignId('storage_company_id')->constrained()->onDelete('cascade');
+            $table->timestamps();
         });
     }
 

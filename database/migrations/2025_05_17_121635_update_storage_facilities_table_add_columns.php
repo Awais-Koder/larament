@@ -12,12 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('storage_facilities', function (Blueprint $table) {
-        $table->string('name')->after('id');
-        $table->string('address')->nullable()->after('name');
-        $table->foreignId('storage_company_id')
-              ->after('address')
-              ->constrained()
-              ->onDelete('cascade');
+        // $table->string('address')->nullable()->after('name');
+        // $table->foreignId('storage_company_id')
+        //       ->after('address')
+        //       ->constrained()
+        //       ->onDelete('cascade');
     });
     }
 
