@@ -1,0 +1,6 @@
+ /* .fi-modal:not(:last-of-type) {
+    display: none !important;
+}
+.fi-modal + .fi-modal-backdrop ~ .fi-modal-backdrop {
+    display: none !important;
+} */
